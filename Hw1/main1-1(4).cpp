@@ -12,9 +12,9 @@ int main() {
     cout << "MaxLengthOfString:" << endl;
     cin >> MaxLengthOfString;
     cin.get(); // cin.get 吃掉換行
-    char **strings = new char*[NumberOfString];
+    char **strings = new char*[NumberOfString]; 
     
-    //
+    //將使用者輸入的名字存進name[]陣列 
     for (int j = 0; j < NumberOfString; j++) {
         cout << "Please enter the string: " << endl;
         cin.getline(strings[j] = new char[MaxLengthOfString+1], MaxLengthOfString+1);
